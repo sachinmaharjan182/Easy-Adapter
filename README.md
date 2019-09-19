@@ -24,6 +24,16 @@ dependencies {
 
 <li> Make sure you have data binding is enabled in your gradle.
 <li> Pass "null" as second paramter if you dont want callback.
+	
+	class PostAdapter(context:Context,callback:Any?)
+    : BaseAdapter<Post, Any>(context,callback) {
+
+    override fun setLayout(): Int {
+        return R.layout.row_post
+    }
+	}
+
+
 <li>  Extend your class with BaseAdapter
 
 
